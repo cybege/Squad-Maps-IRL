@@ -16,7 +16,7 @@
     }, {
         "type": "Feature",
         "properties": {
-            "shape": "Market",
+            "shape": "Marker",
             "name": "Mestia",
             "category": "Eastern Europe"
         },
