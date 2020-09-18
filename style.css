@@ -1,0 +1,372 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: Roboto, sans-serif;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+h1, h2{
+    text-decoration: none;
+    color: #ccc;
+    margin: 0;
+}
+
+h2{
+    font-size: 25px;
+}
+
+.title{
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* font-size: xx-large; */
+    background-color: rgba(0, 0, 0, 0.644);
+}
+
+.title img {
+    max-height: 50px;
+    display: inline-block;
+}
+
+.title h1{
+    display: inline-block;
+    color: white;
+}
+
+.optionWrapper{
+    display: inline-block;
+    padding: 8px 8px 8px 15px;
+    white-space: nowrap;
+}
+
+.optionWrapper h2 {
+    float: left;
+}
+
+.optionWrapper .switch {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-image: url(fallujah_bg.jpg);
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ccc;
+
+    display: block;
+    transition: 0.3s;
+}
+
+/* .sidebar a:hover {
+    color: #f1f1f1;
+} */
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidebar-wrapper {
+    max-height: 80vh;
+    padding: 3px 0 3px 0px;
+    background: rgba(128, 128, 128, 0.5);
+    overflow-x: hidden;
+    overflow-y: auto;    
+}
+
+.sidebar-content {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar-content h2, a {
+    font-weight: bold;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+#openNavBtn {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    flex: 1;
+    flex-direction: row;
+    transition: 0.15s;
+}
+
+.bulletin-board{
+    padding: 8px 8px 8px 8px;
+    white-space: nowrap;
+    transition: 0.1s;
+    transition-timing-function: cubic-bezier(1,0,1,.6);
+    opacity: 1;
+}
+
+.bulletin-board p{
+    white-space: normal; color: lightgray;
+    font-family: monospace;
+}
+
+.bulletin-board p b{
+    white-space: normal; color: white;
+}
+
+.bulletin-board p a{
+    all: initial;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.collapsible {
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+    background-color: #ccc;
+    color: black !important;
+    padding: 10px 0 10px 25px !important;
+}
+
+div#collapsibleMaps .content .collapsible-link {
+    margin-top: 10px;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 20px !important;
+    color: #ccc;
+
+    display: block;
+    transition: 0.3s;
+}
+
+/* div#collapsibleMaps:hover{
+    background-color: #ccc;
+    padding: 10px 0 10px 25px;
+}
+
+div#collapsibleMaps a:hover{
+    color: black !important;
+} */
+
+.sidebar-content .sidebar-content-item{
+    transition: 0.3s;
+    background: rgb(255 255 255 / 26%);
+    width: 100%;
+    border-bottom: 2px #00000045 solid;
+}
+
+.sidebar-content .sidebar-content-item:not(#collapsibleMaps):hover{
+    padding: 10px 0 10px 25px;
+}
+/* 
+.sidebar-content .sidebar-content-item>.collapsible-link:not(.active):hover{
+    padding: 10px 0 10px 25px;
+}  */
+
+.sidebar-content .sidebar-content-item > .collapsible-link:not(.active):hover{
+    padding: 10px 0 10px 25px;
+} 
+
+div#collapsibleMaps .content .collapsible-link:hover{
+    background-color: #ccc;
+    color: black !important;
+    padding: 10px 0 10px 25px;
+}
+
+.content {
+    padding: 0 0 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #00000061;
+    color: #ccc;
+}
+
+.content:hover {
+    /* color: black !important;
+    background-color: #ccc; */
+}
+
+.subcontent p {
+    padding: 10px 0 10px 18px;
+    transition: 0.1s ease-in-out;
+    margin: 5px 0 5px 0;
+}
+
+.subcontent p:hover{
+    padding: 10px 0 10px 25px;
+    text-decoration: underline;
+}
+
+/* ------------ Popup ------------ */
+
+.popup{
+    opacity: 0.8;
+    transform-origin: top;
+}
+
+.popup img{
+    position: relative;
+    width: 80vmin;
+    height: 80vmin;
+    /* opacity: 0.5; */
+    /* transform: scale(0.1, 0.1); */
+}
+
+/* ------------ Toggle Sliders ------------ */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #005da7;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #005da7;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* ----- SVG Button ------ */
+
+.sidebar .svg-button {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 36px;
+    margin-left: 0px;
+}
+
+.svg-button {
+    width: 1.5em;
+    height: 1.4em;
+    padding-top: 4px;
+    border-radius: 50%;
+  }
+      
+  .search-button svg {
+    width: 100%;
+    height: 100%;
+  }
