@@ -1,6 +1,10 @@
 # Squad Maps IRL
 ![squad_maps_irl_banner](https://raw.githubusercontent.com/cybege/Squad-Maps-IRL/master/screens/banner.jpg)
-Now you'll know where you'll be deploying next.
+
+> *Now you'll know where you'll be deploying.*
+
+Online: [**https://cybege.github.io/squad_maps/**](https://cybege.github.io/squad_maps/)
+
 ## Community Quests
 1. Find where  [Gorodok](https://squad.gamepedia.com/Gorodok)  is located.
 
