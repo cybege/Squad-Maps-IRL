@@ -5,7 +5,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Skorpo",
-            "category": "Northern Europe"
+            "category": "Northern Europe",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -16,9 +17,24 @@ var data = {
     }, {
         "type": "Feature",
         "properties": {
-            "shape": "Market",
+            "shape": "Marker",
+            "name": "Harju",
+            "category": "Northern Europe",
+            "note": "Whitelisted"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [24.956194, 60.187417]
+        },
+        "id": "777639e6-c711-49f6-b5ea-f78b27229648",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1814065068"
+    }, {
+        "type": "Feature",
+        "properties": {
+            "shape": "Marker",
             "name": "Mestia",
-            "category": "Eastern Europe"
+            "category": "Eastern Europe",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -31,7 +47,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Narva",
-            "category": "Eastern Europe"
+            "category": "Eastern Europe",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -44,7 +61,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Yehorivka",
-            "category": "Eastern Europe"
+            "category": "Eastern Europe",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -57,7 +75,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Chora",
-            "category": "Southern Asia"
+            "category": "Southern Asia",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -70,7 +89,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Kamdesh",
-            "category": "Southern Asia"
+            "category": "Southern Asia",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -83,7 +103,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Kohat Toi",
-            "category": "Southern Asia"
+            "category": "Southern Asia",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -96,7 +117,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Kokan",
-            "category": "Southern Asia"
+            "category": "Southern Asia",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -109,7 +131,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Lashkar Valley",
-            "category": "Southern Asia"
+            "category": "Southern Asia",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -122,7 +145,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Logar Valley",
-            "category": "Southern Asia"
+            "category": "Southern Asia",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -135,7 +159,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Sumari",
-            "category": "Southern Asia"
+            "category": "Southern Asia",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -148,7 +173,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Al Basrah",
-            "category": "Middle East"
+            "category": "Middle East",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -161,7 +187,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Fallujah",
-            "category": "Middle East"
+            "category": "Middle East",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -174,7 +201,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Mutaha",
-            "category": "Middle East"
+            "category": "Middle East",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -187,7 +215,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Tallil Outskirts",
-            "category": "Middle East"
+            "category": "Middle East",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -200,7 +229,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Manic-5",
-            "category": "North America"
+            "category": "North America",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",
@@ -213,7 +243,8 @@ var data = {
         "properties": {
             "shape": "Marker",
             "name": "Nanisivik",
-            "category": "North America"
+            "category": "North America",
+            "note": "Official"
         },
         "geometry": {
             "type": "Point",

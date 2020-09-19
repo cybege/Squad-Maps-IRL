@@ -12,7 +12,7 @@ var map = new mapboxgl.Map({
     minZoom: 1.5,
     zoom: startZoom,
     center: startCoordinate,
-    style: 'mapbox://styles/egertu/ckf7bv0oj1bvh19myamuyin3i',
+    style: 'mapbox://styles/egertu/ckf7bv0oj1bvh19myamuyin3i?fresh=true',
 });
 
 var images = {
@@ -34,8 +34,9 @@ var images = {
     'Narva': 'Narva_Minimap_Alpha_V10.jpg',
     'Skorpo': 'Skorpo_minimap.jpg',
     'Al Basrah': 'Squad_Al_Basrah_2.jpg',
-    'Sumari': 'Sumari_minimap_V6.jpg',
-    'Tallil Outskirts': 'Tallil_Outskirts_Minimap.jpg'
+    'Sumari Bala': 'Sumari_minimap_V6.jpg',
+    'Tallil Outskirts': 'Tallil_Outskirts_Minimap.jpg',
+    'Harju': 'Harju.jpg'
 };
 
 data.features.forEach(feature => {
@@ -200,7 +201,7 @@ data.features.forEach(feature => {
     })
 
     newContent.classList.add("content", "subcontent");
-    if(name == "Mutaha"){
+    if(name == "Mutaha" || name == "Harju"){
         name +="*";
     }
     // newContent.innerText = name;

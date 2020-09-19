@@ -6,7 +6,6 @@
     <title>Squad Maps IRL</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="icon" href="/squad_maps/squad_favicon.ico" type="image/x-icon" />
-    <script src="breakon.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
@@ -38,13 +37,14 @@
                 </div>
                 <a href="https://github.com/cybege/Squad-Maps-IRL" target="_blank" class="sidebar-content-item">Contribute <span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
                 <div id="bulletin-board" class="bulletin-board">
-                    <p style=><b>Community Quests:</b><br>1) Find where <a href="https://squad.gamepedia.com/Gorodok" target="_blank">Gorodok</a> is located.</p>
+                    <p>* <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1814065068" target="_blank">Harju</a> is a whitelisted map.</p>
+                    <p style=><b>Community Quests:</b><br><b>1.</b> Find where <a href="https://squad.gamepedia.com/Gorodok" target="_blank">Gorodok</a> is located.</p>
                 <p style=>I suspect <a href="https://goo.gl/maps/ojkUekJN93qsDR4L7" target="_blank">here</a>. <a href="/squad_maps/gorodok_quest.png" target="_blank"><br>Here</a> is the reason.</p>
-                <p>2) Find exact location of Mutaha*.</p>
+                <p><b>2.</b> Find exact location of Mutaha*.</p>
                 <p>Mutaha is <a href="https://squad.gamepedia.com/Mutaha" target="_blank">said</a> to be located in a contested area near Syria-Iraq border. I marked the most probable location. See if you can find a better match.</p>
-                <p>3) Find locations of <a href="https://squad.gamepedia.com/Belaya">Belaya</a> and <a href="https://squad.gamepedia.com/Fool%27s_Road">Fool's Road</a> (might not exist IRL).</p>
-                <a href="https://github.com/cybege/Squad-Maps-IRL/squad_maps_geojson.json" target="_blank" class="sidebar-content-item">Get GeoJSON <span class="iconify" data-icon="ant-design:download" data-inline="false"></span></a>
-                    
+                <p><b>3.</b> Find locations of <a href="https://squad.gamepedia.com/Belaya">Belaya</a> and <a href="https://squad.gamepedia.com/Fool%27s_Road">Fool's Road</a> (might not exist IRL).</p>
+                <p><b>UPDATE:</b> Good news everyone! So I managed to find a <a href="https://www.realitymod.com/forum/showthread.php?p=1888658#post1888658" target="_blank">2013 post</a> in PR forums, that Fool's Road is in <a href="https://goo.gl/maps/FY8yNGaLnTiUYkqQ7" target="_blank">Vani-Zeda Vani</a>, Vani, Georgia. Not sure how accurate this is, but do let me know if you find a good match. Otherwise, I think I'll just add it to the map.</p>
+                <a href="https://github.com/cybege/Squad-Maps-IRL/blob/master/squad_maps_geojson.json" target="_blank" class="sidebar-content-item">Get GeoJSON <span class="iconify" data-icon="ant-design:cloud-download-outlined" data-inline="false"></span></a>
             </div>
             </div>
         </div>
@@ -57,5 +57,15 @@
     <div id="map"></div>
     <script id="data" src="/squad_maps/main.js"></script>
 </body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178419103-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178419103-1');
+</script>
 
 </html>
